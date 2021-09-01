@@ -3,6 +3,8 @@
 LearningX 시스템을 사용하는 학교의 이러닝 강의 컨텐츠를 다운로드 할 수 있는 프로그램입니다.
 
 ## ✔️ 다운로드
+https://github.com/VDoring/New-LMS-Downloader/releases
+
 
 ## ✔️ 사용 방법
 ### 1. 다운로드 하고자 하는 영상을 재생하고, F12 버튼을 누릅니다.
