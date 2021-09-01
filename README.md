@@ -11,13 +11,14 @@ https://github.com/VDoring/New-LMS-Downloader/releases
 ### 1. 다운로드하고자 하는 영상을 재생하고, F12 버튼을 누릅니다.
 ![1-1](https://user-images.githubusercontent.com/50266731/131610778-2043b470-3ce4-4b22-98dc-a47b59140f86.png)
 ### 2. 좌상단의 아이콘을 누릅니다.(단축키: Ctrl+Shift+C)
-![2](https://user-images.githubusercontent.com/50266731/131610784-e592d6ca-c837-4ef4-90c2-9959ef15b25a.png)
+![2-1](https://user-images.githubusercontent.com/50266731/131627448-610d2809-d161-44d1-b2aa-8f7e152ad4c2.png)
 ### 3. 동영상 창을 클릭합니다.
 ![3-1](https://user-images.githubusercontent.com/50266731/131610785-b5b41b02-9747-4b96-9dbf-8c5590c4c262.png)
 ### 4. 링크 부분을 더블클릭하고 링크를 복사합니다.
-![4-1](https://user-images.githubusercontent.com/50266731/131615546-7dc50f56-e59f-4bb2-a2f1-06bc6c9d6436.png)
+![4-2](https://user-images.githubusercontent.com/50266731/131627470-5efcc41b-1139-4a4a-848d-f82c404d4f9a.png)
 ### 5. 다운로더에 링크를 붙여 넣고 실행합니다.
-![5-1](https://user-images.githubusercontent.com/50266731/131611836-638337f3-98b8-41a0-ad99-ba175889bdcf.png)
+![5-2](https://user-images.githubusercontent.com/50266731/131627491-b96fcbdb-0923-4dc2-b830-9829807fae73.png)
+
 
 ## ✔️ 개발 동기
 강의는 열람 기간이 지나면 삭제되는 경우가 있고 완강하기 전까지 사용자가 강의의 타임라인을 조정할 수 없는 등의 불편함이 있어 많은 학생들이 영상을 다운로드하여 보는 경우가 많습니다.
