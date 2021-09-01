@@ -1,20 +1,22 @@
-# # 학교 e-class 영상 다운로드 #
-# # https://for-sign.tistory.com/39 #
+# urllib는 requests 라이브러리를 설치하면 사용할 수 있습니다.#
 import urllib.request
 import os
 
 i = 1
 
 os.system('mode con cols=134 lines=17')
-os.system('title New LMS Video Downloader - CLI type v1.0 by VDoring')
+os.system('title New LMS Video Downloader - CLI type v1.0.1 by VDoring')
 
-print('< 새로운 LMS 영상 다운로드 프로그램 >')
+print('< LMS 영상 다운로드 프로그램 >')
 print('사용방법: https://github.com/VDoring/New-LMS-Downloader\n')
 
 def save_video(video_url, savename):
-    print('다운로드중...')
-    urllib.request.urlretrieve(video_url, savename)
-    print('[!]', savename, '저장이 완료되었습니다!\n')
+    try:
+        print('다운로드중...')
+        urllib.request.urlretrieve(video_url, savename)
+        print(savename, '저장이 완료되었습니다!\n')
+    except:
+        print('[!] 올바른 링크가 아닙니다! [!]\n')
 
 while True:
     print('[' + str(i) + '번째 다운로드' + ']')
@@ -25,19 +27,3 @@ while True:
     save_video(user_videolink, user_filename)
 
     i += 1
-
-
-
-# 원본코드 #
-# urllib는 requests 라이브러리를 받으면 사용할 수 있습니다.
-# import urllib.request
-
-# def save_video(video_url) :
-#     savename = 'save_by_urllib.mp4'
-
-#     urllib.request.urlretrieve(video_url,savename)
-#     print("저장완료")
-
-# link = input('링크입력:')
-
-# save_video(link)
