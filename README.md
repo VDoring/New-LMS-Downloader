@@ -15,7 +15,7 @@ https://github.com/VDoring/New-LMS-Downloader/releases
 ### 3. 동영상 창을 클릭합니다.
 ![3-1](https://user-images.githubusercontent.com/50266731/131610785-b5b41b02-9747-4b96-9dbf-8c5590c4c262.png)
 ### 4. 링크 부분을 더블클릭하고 링크를 복사합니다.
-![4](https://user-images.githubusercontent.com/50266731/131610857-8891ae64-4077-478e-80f6-c23da607b068.png)
+![4-1](https://user-images.githubusercontent.com/50266731/131615546-7dc50f56-e59f-4bb2-a2f1-06bc6c9d6436.png)
 ### 5. 다운로더에 링크를 붙여 넣고 실행합니다.
 ![5-1](https://user-images.githubusercontent.com/50266731/131611836-638337f3-98b8-41a0-ad99-ba175889bdcf.png)
 
