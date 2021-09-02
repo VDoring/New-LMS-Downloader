@@ -16,7 +16,7 @@ https://github.com/VDoring/New-LMS-Downloader/releases
 ![3-1](https://user-images.githubusercontent.com/50266731/131610785-b5b41b02-9747-4b96-9dbf-8c5590c4c262.png)
 ### 4. 링크 부분을 더블클릭하고 링크를 복사합니다.
 ![4-2](https://user-images.githubusercontent.com/50266731/131627470-5efcc41b-1139-4a4a-848d-f82c404d4f9a.png)
-### 5. 다운로더에 링크를 붙여 넣고 실행합니다.
+### 5. 다운로더에 링크를 붙여 넣고 Enter키를 눌러 실행합니다.
 ![5-2](https://user-images.githubusercontent.com/50266731/131627491-b96fcbdb-0923-4dc2-b830-9829807fae73.png)
 
 
