@@ -3,7 +3,7 @@ import os
 from requests import get
 
 os.system('mode con cols=134 lines=17')
-os.system('title New LMS Video Downloader - CLI type v1.0.3 by VDoring')
+os.system('title New LMS Video Downloader - CLI type v1.0.4 by VDoring')
 
 print('< LMS 영상 다운로드 프로그램 >')
 print('사용방법: https://github.com/VDoring/New-LMS-Downloader\n')
@@ -31,15 +31,14 @@ def videoSave1(videolink, filename):
     urllib.request.urlretrieve(videolink, filename)
 
 def videoSave2(videolink, filename):
-    with open(filename, "wb") as file:
-        response = get(videolink)
+    response = get(videolink)
+    with open(filename, 'wb') as file:
         file.write(response.content)
 
 def videoSave3(videolink, filename):
     video_read = urllib.request.urlopen(videolink).read()
-    video_open = open(filename, 'wb')
-    video_open.write(video_read)
-    video_open.close()
+    with open(filename, 'wb') as file:
+        file.write(video_read)
 
 while True:
     print('[' + str(i) + '번째 다운로드' + ']')
