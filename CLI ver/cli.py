@@ -15,13 +15,12 @@ i = 1
 #매개변수: videolink, filename
 #리턴값: 없음
 def videoSaveManager(videolink, filename):
-    print('다운로드중...', end='', flush=True)
-    print('')
     videoSave1(videolink, filename) # 시도1
     if videoStatusCheck(filename) == True:
-        print('\r>>', filename, '저장이 완료되었습니다! <<\n\n')
+        print('>>', filename, '저장이 완료되었습니다! <<\n\n')
         return
     else:
+        print('다운로드중...', end='', flush=True)
         try: # 시도2
             videoSave2(videolink, filename)
         except:
