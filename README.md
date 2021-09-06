@@ -4,7 +4,6 @@ LearningX 시스템을 사용하는 학교의 이러닝 강의 콘텐츠를 다�
 소스는 공개되어 있으며, fork후 수정/배포 환영합니다.
 
 ## ✔️ 다운로드
-- 일반사용자분들은 Advanced가 **아닌** 버전을 추천합니다. 기능은 같으면서 더 빨리 입력할 수 있기 때문입니다.
 https://github.com/VDoring/New-LMS-Downloader/releases
 
 
