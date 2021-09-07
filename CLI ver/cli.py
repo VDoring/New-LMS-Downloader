@@ -3,7 +3,7 @@ import os
 from requests import get
 
 os.system('mode con cols=135 lines=26')
-os.system('title New LMS Downloader - v1.1 by VDoring')
+os.system('title New LMS Downloader - v1.1.1 by VDoring')
 
 print('< LMS 영상 다운로드 프로그램 >')
 print('사용방법: https://github.com/VDoring/New-LMS-Downloader\n')
@@ -15,8 +15,10 @@ i = 1
 #매개변수: videolink, filename
 #리턴값: 없음
 def videoSaveManager(videolink, filename):
-    videoSave1(videolink, filename) # 시도1
-    if videoStatusCheck(filename) == True:
+    nospace_filename = filename.replace(' ','') # 시도1 작동을 위해 파일이름 띄어쓰기 제거
+    videoSave1(videolink, nospace_filename) # 시도1
+    if videoStatusCheck(nospace_filename) == True:
+        os.rename(nospace_filename, filename) # 실제 .mp4파일에선 띄어쓰기 복구
         print('>>', filename, '저장이 완료되었습니다! <<\n\n')
         return
     else:
