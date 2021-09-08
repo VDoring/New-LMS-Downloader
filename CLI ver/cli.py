@@ -1,10 +1,10 @@
 import urllib.request
-from requests import get
+import requests
 import wget
 import os
 
 os.system('mode con cols=135 lines=26')
-os.system('title New LMS Downloader - v1.1.2 by VDoring')
+os.system('title New LMS Downloader - v1.1.3 by VDoring')
 
 print('< LMS 영상 다운로드 프로그램 >')
 print('사용방법: https://github.com/VDoring/New-LMS-Downloader\n')
@@ -30,20 +30,26 @@ def videoSaveManager(videolink, filename):
             try: # 시도3
                 videoSave3(videolink, filename)
             except:
-                try: # 시도4
-                    videoSave4(videolink, filename)
+                try: # 시도3-1
+                    videoSave3_1(videolink, filename)
                 except:
-                    try: # 시도5
-                        videoSave5(videolink)
-                        if videoStatusCheck('ssmovie.mp4') == True:
-                            os.rename('ssmovie.mp4', filename) # 인터넷에서의 파일 이름을 사용자가 원하는 파일이름으로 교체
-                            print('\n>>', filename, '저장이 완료되었습니다! <<\n\n')
-                            return
-                        print('\r>> 인터넷에서 인식하는 파일 이름이 ssmovie가 아닙니다. 따라서 ssmovie란 이름으로 저장하겠습니다. <<')
-                        print('>>', 'ssmovie.mp4', '저장이 완료되었습니다! <<\n\n')
-                        return
+                    try: # 시도3-2
+                        videoSave3_2(videolink, filename)
                     except:
-                        pass
+                        try: # 시도4
+                            videoSave4(videolink, filename)
+                        except:
+                            try: # 시도5
+                                videoSave5(videolink)
+                                if videoStatusCheck('ssmovie.mp4') == True:
+                                    os.rename('ssmovie.mp4', filename) # 인터넷에서의 파일 이름을 사용자가 원하는 파일이름으로 교체
+                                    print('\n>>', filename, '저장이 완료되었습니다! <<\n\n')
+                                    return
+                                print('\r>> 인터넷에서 인식하는 파일 이름이 ssmovie가 아닙니다. 따라서 ssmovie란 이름으로 저장하겠습니다. <<')
+                                print('>>', 'ssmovie.mp4', '저장이 완료되었습니다! <<\n\n')
+                                return
+                            except:
+                                pass
     
     if videoStatusCheck(filename) == True:
         print('\r>>', filename, '저장이 완료되었습니다! <<\n\n')
@@ -68,12 +74,24 @@ def videoSave1(videolink, filename):
 def videoSave2(videolink, filename):
     urllib.request.urlretrieve(videolink, filename)
 
-#by VDoring. 2021.09.04
-#강의영상파일을 requests get 방식으로 다운로드합니다
+#by VDoring. 2021.09.08
+#강의영상파일을 User-Agent 설정을 포함한 requests get 방식으로 다운로드합니다
 #매개변수: videolink, filename
 #리턴값: 없음
 def videoSave3(videolink, filename):
-    response = get(videolink)
+    response = requests.get(videolink)
+    with open(filename, 'wb') as file:
+        file.write(response.content)
+
+def videoSave3_1(videolink, filename):
+    headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'}
+    response = requests.get(videolink, headers=headers)
+    with open(filename, 'wb') as file:
+        file.write(response.content)
+
+def videoSave3_2(videolink, filename):
+    headers = {'user-agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2224.3 Safari/537.36'}
+    response = requests.get(videolink, headers=headers)
     with open(filename, 'wb') as file:
         file.write(response.content)
 
