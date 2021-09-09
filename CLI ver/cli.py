@@ -4,7 +4,7 @@ import wget
 import os
 
 os.system('mode con cols=135 lines=26')
-os.system('title New LMS Downloader - v1.1.3 by VDoring')
+os.system('title New LMS Downloader - v1.1.4 by VDoring')
 
 print('< LMS 영상 다운로드 프로그램 >')
 print('사용방법: https://github.com/VDoring/New-LMS-Downloader\n')
@@ -45,6 +45,7 @@ def videoSaveManager(videolink, filename):
                                     os.rename('ssmovie.mp4', filename) # 인터넷에서의 파일 이름을 사용자가 원하는 파일이름으로 교체
                                     print('\n>>', filename, '저장이 완료되었습니다! <<\n\n')
                                     return
+                                # !!!실질적으로 작동 안되는 부분!!!메세지 출력 바꾸기!!!
                                 print('\r>> 인터넷에서 인식하는 파일 이름이 ssmovie가 아닙니다. 따라서 ssmovie란 이름으로 저장하겠습니다. <<')
                                 print('>>', 'ssmovie.mp4', '저장이 완료되었습니다! <<\n\n')
                                 return
@@ -122,6 +123,23 @@ def videoStatusCheck(filename):
     return False
 
 
+#by VDoring. 2021.09.09
+#인터넷 연결 상태를 확인합니다.
+#매개변수: 없음
+#리턴값: True, False
+def internetCheck():
+    url = 'http://www.google.com/'
+    timeout = 3
+
+    try:
+        r = requests.head(url, timeout=timeout)
+        return True
+    except requests.ConnectionError:
+        return False
+    except:
+        return False
+
+
 # 메인코드 #
 while True:
     print('[' + str(i) + '번째 다운로드' + ']')
@@ -129,5 +147,9 @@ while True:
     user_filename = input('파일 이름을 입력하세요: ')
     user_filename = user_filename + '.mp4'
 
+    if internetCheck() == False:
+        print('>> 인터넷 연결이 되어있지 않습니다. <<\n\n')
+        continue
     videoSaveManager(user_videolink, user_filename)
+    
     i += 1
