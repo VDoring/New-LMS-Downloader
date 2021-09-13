@@ -3,8 +3,8 @@ import requests
 import wget
 import os
 
-os.system('mode con cols=135 lines=26')
-os.system('title New LMS Downloader - v1.1.4 by VDoring')
+os.system('mode con cols=135 lines=27')
+os.system('title New LMS Downloader - v1.1.5 by VDoring')
 
 print('< LMS 영상 다운로드 프로그램 >')
 print('사용방법: https://github.com/VDoring/New-LMS-Downloader\n')
@@ -45,9 +45,7 @@ def videoSaveManager(videolink, filename):
                                     os.rename('ssmovie.mp4', filename) # 인터넷에서의 파일 이름을 사용자가 원하는 파일이름으로 교체
                                     print('\n>>', filename, '저장이 완료되었습니다! <<\n\n')
                                     return
-                                # !!!실질적으로 작동 안되는 부분!!!메세지 출력 바꾸기!!!
-                                print('\r>> 인터넷에서 인식하는 파일 이름이 ssmovie가 아닙니다. 따라서 ssmovie란 이름으로 저장하겠습니다. <<')
-                                print('>>', 'ssmovie.mp4', '저장이 완료되었습니다! <<\n\n')
+                                print('\n>> 강의 영상 저장이 완료되었습니다! <<\n\n')
                                 return
                             except:
                                 pass
