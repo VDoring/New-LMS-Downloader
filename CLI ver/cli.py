@@ -4,7 +4,7 @@ import wget
 import os
 
 os.system('mode con cols=135 lines=27')
-os.system('title New LMS Downloader - v1.1.5 by VDoring')
+os.system('title New LMS Downloader - v1.1.6 by VDoring')
 
 print('< LMS 영상 다운로드 프로그램 >')
 print('사용방법: https://github.com/VDoring/New-LMS-Downloader\n')
@@ -16,6 +16,8 @@ i = 1
 #매개변수: videolink, filename
 #리턴값: 없음
 def videoSaveManager(videolink, filename):
+    if os.path.isfile(filename) == True:
+        os.remove(filename)
     nospace_filename = filename.replace(' ','') # 시도1 작동을 위해 파일이름 띄어쓰기 제거
     videoSave1(videolink, nospace_filename) # 시도1
     if videoStatusCheck(nospace_filename) == True:
@@ -24,22 +26,60 @@ def videoSaveManager(videolink, filename):
         return
     else:
         try: # 시도2
-            print('다운로드중입니다...', end='', flush=True)
+            if os.path.isfile(filename) == True:
+                os.remove(filename)# 빈 .mp4 파일 삭제
+            print('다운로드중입니다..', end='', flush=True)
+            print('2', end='', flush=True)
             videoSave2(videolink, filename)
+            if videoStatusCheck(filename) == True: # 파일 상태 정상인지 체크
+                pass
+            else:
+                raise ValueError
         except:
             try: # 시도3
+                if os.path.isfile(filename) == True:
+                    os.remove(filename)
+                print('3', end='', flush=True)
                 videoSave3(videolink, filename)
+                if videoStatusCheck(filename) == True:
+                    pass
+                else:
+                    raise ValueError
             except:
                 try: # 시도3-1
+                    if os.path.isfile(filename) == True:
+                        os.remove(filename)
+                    print('3-1', end='', flush=True)
                     videoSave3_1(videolink, filename)
+                    if videoStatusCheck(filename) == True:
+                        pass
+                    else:
+                        raise ValueError
                 except:
                     try: # 시도3-2
+                        if os.path.isfile(filename) == True:
+                            os.remove(filename)
+                        print('3-2', end='', flush=True)
                         videoSave3_2(videolink, filename)
+                        if videoStatusCheck(filename) == True:
+                            pass
+                        else:
+                            raise ValueError
                     except:
                         try: # 시도4
+                            if os.path.isfile(filename) == True:
+                                os.remove(filename)
+                            print('4', end='', flush=True)
                             videoSave4(videolink, filename)
+                            if videoStatusCheck(filename) == True:
+                                pass
+                            else:
+                                raise ValueError
                         except:
                             try: # 시도5
+                                if os.path.isfile(filename) == True:
+                                    os.remove(filename)
+                                print('5', end='', flush=True)
                                 videoSave5(videolink)
                                 if videoStatusCheck('ssmovie.mp4') == True:
                                     os.rename('ssmovie.mp4', filename) # 인터넷에서의 파일 이름을 사용자가 원하는 파일이름으로 교체
@@ -48,14 +88,12 @@ def videoSaveManager(videolink, filename):
                                 print('\n>> 강의 영상 저장이 완료되었습니다! <<\n\n')
                                 return
                             except:
-                                pass
+                                print('\r>> 다운로드에 실패했습니다. <<\n\n')
+                                if os.path.isfile(filename) == True: # (재생불가,불필요한) .mp4파일이 생성된 상태라면
+                                    os.remove(filename) # .mp4파일 제거
+                                return
     
-    if videoStatusCheck(filename) == True:
-        print('\r>>', filename, '저장이 완료되었습니다! <<\n\n')
-    else:
-        print('\r>> 다운로드에 실패했습니다. <<\n\n')
-        if os.path.isfile(filename) == True: # (재생불가,불필요한) .mp4파일이 생성된 상태라면
-            os.remove(filename) # .mp4파일 제거
+    print('\r>>', filename, '저장이 완료되었습니다! <<\n\n')
 
 
 #by VDoring. 2021.09.07
