@@ -2,11 +2,10 @@
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FVDoring%2FNew-LMS-Downloader&count_bg=%230085CA&title_bg=%23555555&icon=github.svg&icon_color=%23E7E7E7&title=View&edge_flat=false)](https://hits.seeyoufarm.com)
 
 ## 2021년 2학기에 변경된 LearningX 동영상 다운로드 방식에 대응한 동영상 다운로더
-LearningX 시스템을 사용하는 학교의 이러닝 강의 콘텐츠를 다운로드할 수 있는 프로그램입니다.
-소스는 공개되어 있으며, fork후 수정/배포 환영합니다.
+LearningX 및 기타 LMS 시스템을 사용하는 학교의 강의 콘텐츠를 다운로드할 수 있는 프로그램입니다.
 
 ## ❌ 경고
-다운로드한 강의 영상을 **공유하거나 배포하지 마십시오.**
+다운로드한 강의 콘텐츠를 **공유하거나 배포하지 마십시오.**
 
 ## ✔️ 다운로드
 https://github.com/VDoring/New-LMS-Downloader/releases
@@ -29,3 +28,6 @@ https://github.com/VDoring/New-LMS-Downloader/releases
 강의는 열람 기간이 지나면 삭제되는 경우가 있고 완강하기 전까지 사용자가 강의의 타임라인을 조정할 수 없는 등의 불편함이 있어 많은 학생들이 영상을 다운로드하여 보는 경우가 많습니다.
 
 하지만 2021년 2학기에 LearningX의 시스템이 바뀌게 되면서 기존 방식으로 강의를 다운로드할 수 없게 되었고, 이 문제를 조금이나마 해결하고자 프로그램을 제작하게 되었습니다.
+
+## 문의
+hojun.dev@gmail.com
