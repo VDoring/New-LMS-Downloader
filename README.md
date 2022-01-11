@@ -1,7 +1,7 @@
 # New LMS Downloader
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FVDoring%2FNew-LMS-Downloader&count_bg=%230085CA&title_bg=%23555555&icon=github.svg&icon_color=%23E7E7E7&title=View&edge_flat=false)](https://hits.seeyoufarm.com)
 
-## 2021년 2학기에 변경된 LearningX 동영상 다운로드 방식에 대응한 동영상 다운로더
+## 2021년 변경된 Learning X 시스템에 대응한 동영상 다운로더
 LearningX 및 기타 LMS 시스템을 사용하는 학교의 강의 콘텐츠를 다운로드할 수 있는 프로그램입니다.
 
 ## ❌ 경고
