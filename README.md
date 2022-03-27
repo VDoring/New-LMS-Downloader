@@ -26,7 +26,7 @@ https://github.com/VDoring/New-LMS-Downloader/releases
 ![5-5](https://user-images.githubusercontent.com/50266731/160042931-75dfe3a2-4054-449c-b398-fca83887aac8.png)
 
 ## ✔️ 지원 학교
-**동서대학교, 경북대학교, 송원대학교, 마산대학교**
+**동서대학교, 경북대학교, 송원대학교, 마산대학교, 경희대학교, 한양대학교**
 
 그 외는 학교별 LMS 시스템에 따라 될 수도 있고 안될 수도 있습니다.
 
