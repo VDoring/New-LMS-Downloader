@@ -17,7 +17,7 @@ Learning X 및 기타 LMS 시스템을 사용하는 학교의 강의 콘텐츠�
 학교별 LMS 시스템에 따라 지원 여부가 달라집니다.
 
 ## ✔️ 다운로드
-**https://github.com/VDoring/New-LMS-Downloader/releases**
+**https://github.com/VDoring/New-LMS-Downloader/releases/latest**
 
 ## ✔️ 사용 방법
 ### 1. 다운로드하고자 하는 영상을 '재생'하고, F12 버튼을 누릅니다.
