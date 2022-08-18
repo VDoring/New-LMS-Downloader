@@ -1,7 +1,7 @@
 # New LMS Downloader
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FVDoring%2FNew-LMS-Downloader&count_bg=%230085CA&title_bg=%23555555&icon=github.svg&icon_color=%23E7E7E7&title=View&edge_flat=false)](https://hits.seeyoufarm.com)
 
-<img src="https://user-images.githubusercontent.com/50266731/169631185-be05dab0-8be4-4efd-93da-b475dd8ca345.png" width="34%">
+![GUItitle](https://user-images.githubusercontent.com/50266731/185409680-c74782f2-fbb1-4fb1-aa51-e8fd13328bf2.png)
 
 ## 변경된 Learning X 시스템에 대응한 동영상 다운로더
 Learning X 및 기타 LMS 시스템을 사용하는 학교의 강의 콘텐츠를 다운로드할 수 있는 '무설치 프로그램(Portable)'입니다.
@@ -29,7 +29,9 @@ Learning X 및 기타 LMS 시스템을 사용하는 학교의 강의 콘텐츠�
 ### 4. http:// 또는 https:// 로 시작하는 링크 부분을 더블클릭하고 링크를 복사(Ctrl+C)합니다.
 ### [< 정상 동작한 링크 예시 >](https://vdoring.notion.site/New-LMS-Downloader-cef831812c564f01b5f9e72bdd3482b7)
 ![4-4](https://user-images.githubusercontent.com/50266731/135854062-44d8448b-f053-42d3-8114-b532d2dda622.png)
-### 5. 다운로더에 링크를 붙여넣고(Ctrl+V) Enter키, 원하는 파일 이름을 넣고 Enter키를 눌러 다운로드합니다.
+### 5-1. [Version 2.0+] 다운로더에 링크를 붙여넣고(Ctrl+V), 원하는 파일 이름을 넣고, 'START' 버튼을 눌러 다운로드합니다.
+![n5-1](https://user-images.githubusercontent.com/50266731/185410117-5854f5d9-f5dc-473c-b2b6-5753578717f5.png)
+### 5-2. [Version 1.0 ~ 1.5] 다운로더에 링크를 붙여넣고(Ctrl+V) Enter키, 원하는 파일 이름을 넣고 Enter키를 눌러 다운로드합니다.
 ![5-6](https://user-images.githubusercontent.com/50266731/169661677-47a0e11d-a9c7-4a42-b676-70bfcfb64568.png)
 
 
