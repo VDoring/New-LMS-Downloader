@@ -43,5 +43,11 @@ Learning X 및 기타 LMS 시스템을 사용하는 학교의 강의 콘텐츠�
 저는 이 문제를 조금이나마 해결하기 위해 LMS 영상 다운로드 프로그램을 제작하게 되었습니다.
 
 
+## ✔️ 사용한 폰트
+PF스타더스트 - https://noonnu.cc/font_page/393
+
+Social Media Circled - https://www.dafont.com/social-media-circled.font
+
+
 ## 📧 문의
 hojun.dev@gmail.com
