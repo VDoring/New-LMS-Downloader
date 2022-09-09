@@ -1,5 +1,13 @@
 # -*- coding: utf-8 -*-
 
+################################################################################
+## Form generated from reading UI file 'UI_nlmsdRbsLyK.ui'
+##
+## Created by: Qt User Interface Compiler version 5.14.1
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
 from PySide2.QtCore import (QCoreApplication, QMetaObject, QObject, QPoint,
     QRect, QSize, QUrl, Qt)
 from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont,
@@ -142,7 +150,7 @@ class Ui_MainWindow(object):
 "}")
         self.text_video_download_status = QLabel(self.frame_static_3)
         self.text_video_download_status.setObjectName(u"text_video_download_status")
-        self.text_video_download_status.setGeometry(QRect(58, 148, 451, 21))
+        self.text_video_download_status.setGeometry(QRect(8, 148, 541, 21))
         font4 = QFont()
         font4.setFamily(u"PF\uc2a4\ud0c0\ub354\uc2a4\ud2b8")
         font4.setPointSize(12)
@@ -178,7 +186,7 @@ class Ui_MainWindow(object):
         self.text_static_nlmsd.setAlignment(Qt.AlignCenter)
         self.text_static_nlmsd_ver = QLabel(self.frame_static_2)
         self.text_static_nlmsd_ver.setObjectName(u"text_static_nlmsd_ver")
-        self.text_static_nlmsd_ver.setGeometry(QRect(530, 41, 61, 31))
+        self.text_static_nlmsd_ver.setGeometry(QRect(525, 41, 70, 31))
         self.text_static_nlmsd_ver.setFont(font1)
         self.text_static_nlmsd_ver.setStyleSheet(u"color: rgb(59, 59, 59);")
         self.text_static_nlmsd_ver.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
