@@ -27,7 +27,7 @@ Learning X 및 기타 LMS 시스템을 사용하는 학교의 강의 콘텐츠�
 ### 3. 동영상 창을 클릭합니다.
 ![3-1](https://user-images.githubusercontent.com/50266731/131610785-b5b41b02-9747-4b96-9dbf-8c5590c4c262.png)
 ### 4. http:// 또는 https:// 로 시작하는 링크 부분을 더블클릭하고 링크를 복사(Ctrl+C)합니다.
-### [< 정상 동작한 링크 예시 >](https://vdoring.notion.site/New-LMS-Downloader-cef831812c564f01b5f9e72bdd3482b7)
+### [< 정상 동작한 링크 예시. 누르면 이동합니다. >](https://vdoring.notion.site/New-LMS-Downloader-cef831812c564f01b5f9e72bdd3482b7)
 ![4-4](https://user-images.githubusercontent.com/50266731/135854062-44d8448b-f053-42d3-8114-b532d2dda622.png)
 ### 5-1. [Version 2.+] 다운로더에 링크를 붙여넣고(Ctrl+V), 원하는 파일 이름을 넣고, 'START' 버튼을 눌러 다운로드합니다.
 ![n5-1](https://user-images.githubusercontent.com/50266731/185410117-5854f5d9-f5dc-473c-b2b6-5753578717f5.png)
