@@ -20,7 +20,7 @@ Learning X 및 기타 LMS 시스템을 사용하는 학교의 강의 콘텐츠�
 ## ✔️ 링크
 #### 온라인 웹사이트 버전(Version 4.0 ~ ) : : : http://www.new-lms-downloader.kro.kr:8501/
 
-#### .exe 프로그램 버전(Version 1.0 ~ 2.0.18) : https://github.com/VDoring/New-LMS-Downloader/releases/latest
+#### .exe 프로그램 버전(Version 1.0 ~ 2.0.18) : https://github.com/VDoring/New-LMS-Downloader/releases/
 
 ## ✔️ 사용 방법
 ### 1. 다운로드하고자 하는 영상을 "재생"합니다. 그리고 F12 버튼을 누릅니다.
