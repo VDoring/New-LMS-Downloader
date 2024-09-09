@@ -20,7 +20,7 @@ _**동서대학교, 경북대학교, 송원대학교, 마산대학교, 경희대
 자세한 사항은 [**이곳**](https://vdoring.notion.site/New-LMS-Downloader-cef831812c564f01b5f9e72bdd3482b7?pvs=4)에서 확인하세요.
 
 ## ✔️ 링크
-#### 온라인 웹사이트 (최신 버전/지원 중) : http://www.new-lms-downloader.kro.kr:8501/
+#### 온라인 웹사이트 (최신 버전/지원 중) : https://www.new-lms-downloader.kro.kr/
 
 #### .exe 프로그램 (구버전/지원 종료) : https://github.com/VDoring/New-LMS-Downloader/releases/
 
